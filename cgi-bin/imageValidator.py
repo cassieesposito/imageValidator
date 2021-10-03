@@ -3,6 +3,8 @@
 import cgi
 import cgitb
 
-print("Content-type:text/html")
+imageURL = cgi.FieldStorage().getvalue("imageURL")
+
+print("Content-type:application/json")
 print("")
-print('<img src="{}">'.format(cgi.FieldStorage().getvalue("validateMe")))
+print(imageURL)
