@@ -1,6 +1,14 @@
 <html>
   <head>
     <title>MMS Image Validator</title>
+    <style>
+      img {
+        max-height:1024px;
+        max-width:768px;
+        height:auto;
+        width:auto;
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -10,8 +18,10 @@
       </form>
     </div>
     <div>
-      <img id="imageOutput" name="imageOutput" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Peterborough_%28AU%29%2C_Port_Campbell_National_Park%2C_Worm_Bay_--_2019_--_0863.jpg/500px-Peterborough_%28AU%29%2C_Port_Campbell_National_Park%2C_Worm_Bay_--_2019_--_0863.jpg">
+      <img id="imageOutput" name="imageOutput" src="">
     </div>
+
+    <div id="validDIV" name="validDIV"></div>
 
     <script src="./imageValidator.js"></script>
   </body>
