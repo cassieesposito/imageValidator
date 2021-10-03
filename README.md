@@ -11,7 +11,6 @@ Check [https://docs.python.org/3/library/imghdr.html](https://docs.python.org/3/
 ## Testing
 Probably not how you'd ever run this in production, but imageValidator.html is a barebones but functional front end.
 
-To launch test environment
-
+To launch test environment:
 `python -m http.server --cgi 8000`
 
