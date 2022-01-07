@@ -53,7 +53,7 @@ def validate():
         else:
             return "HTTP Response Code: {}".format(r.status_code)
     except:
-        return "Unknown error while fetching file"
+        return "Error while fetching file"
 
     try:
         fileType = imghdr.what(io.BytesIO(content))
@@ -61,7 +61,7 @@ def validate():
             return "OK"
         return "Bad file type"
     except:
-        return "Unknown error while determining file type"
+        return "Error while determining file type"
 
 
 main()
