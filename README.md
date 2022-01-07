@@ -14,3 +14,6 @@ Probably not how you'd ever run this in production, but imageValidator.html is a
 To launch test environment:
 `python -m http.server --cgi 8000`
 
+Then navigate to:
+`http://localhost:8000/imageValidator.html`
+
